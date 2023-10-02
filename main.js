@@ -1,11 +1,16 @@
 function calcularTabla(numero){
     
-    if(isNaN(numero) || numero <= 0){
+    if(isNaN(numero)){
     
-        alert("Por favor ingrese un numero valido")
+        alert("Por favor ingrese un número válido")
 
         return;
     
+    } else if (numero <1 || numero >10){
+    
+        alert("Recuerde que el número a ingresar debe ser entre el 1 y el 10 inclusive")
+    
+        return;
     }
 
     let tabla = "";
@@ -19,6 +24,6 @@ function calcularTabla(numero){
     alert(tabla)
 }
 
-let numeroIngresado = Number(prompt("por favor ingrese un numero"))
+let numeroIngresado = Number(prompt("por favor ingrese un número"))
 
 calcularTabla(numeroIngresado)
