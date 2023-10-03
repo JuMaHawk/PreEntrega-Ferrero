@@ -24,6 +24,6 @@ function calcularTabla(numero){
     alert(tabla)
 }
 
-let numeroIngresado = Number(prompt("por favor ingrese un número"))
+let numeroIngresado = Number(prompt("por favor ingrese un número del 1 al 10"))
 
 calcularTabla(numeroIngresado)
